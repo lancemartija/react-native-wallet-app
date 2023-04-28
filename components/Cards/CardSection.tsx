@@ -10,11 +10,11 @@ import { CardSectionProps } from "./types";
 const CardSection: FC<CardSectionProps> = ({ data }) => {
   return (
     <FlatList
-      className="w-full flex-1 pb-[15px] pl-[25px] pr-[50px]"
+      className="w-full flex-1 pb-[15px] pl-[25px]"
       data={data}
       horizontal={true}
       showsHorizontalScrollIndicator={false}
-      contentContainerStyle={{ alignItems: "center" }}
+      contentContainerStyle={{ alignItems: "center", paddingRight: 25 }}
       keyExtractor={({ id }: any) => id.toString()}
       renderItem={({ item }: any) => <CardItem {...item} />}
     />
