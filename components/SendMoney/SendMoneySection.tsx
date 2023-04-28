@@ -13,7 +13,7 @@ import { SendMoneySectionProp } from "./types";
 
 const SendMoneySection: FC<SendMoneySectionProp> = ({ data }) => {
   const sheetRef = useRef<BottomSheet>(null);
-  const snapPoints = useMemo(() => ["15%", "38%"], []);
+  const snapPoints = useMemo(() => [85, "38%"], []);
 
   return (
     <BottomSheet ref={sheetRef} snapPoints={snapPoints} index={0}>
