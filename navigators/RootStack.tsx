@@ -50,9 +50,7 @@ const RootStack: FC = () => {
           headerLeftContainerStyle: {
             paddingLeft: 10,
           },
-          headerRight: () => (
-            <Profile img={Avi} imgContainerStyle="bg-tertiary" />
-          ),
+          headerRight: () => <Profile img={Avi} />,
         }}
       >
         <Stack.Screen

@@ -23,7 +23,7 @@ const Profile: FC<ProfileProp> = ({
   return (
     <TouchableOpacity
       onPress={onPress}
-      className={`h-[45px] w-[45px] flex-col rounded-[15px] ${imgContainerStyle}`}
+      className={`h-[45px] w-[45px] flex-col rounded-[15px] bg-tertiary ${imgContainerStyle}`}
     >
       <Image
         source={img}
